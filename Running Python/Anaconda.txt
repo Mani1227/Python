@@ -1,0 +1,21 @@
+Run anaconda in search
+Launch Jupiter
+
+Go to the below location as it's synched with GitHub
+
+http://localhost:8888/tree/Desktop/Python/Python
+
+!pip install pandas
+import numpy as np
+import pandas as pd
+
+while we read the CSV File we have to keep in the same folder
+#Reading a csv file into a dataframe
+diab_df = pd.read_csv('gestational_diabetes_data.csv')
+type(diab_df)
+
+Sort by PatientID
+diab_df.sort_values(by ='PatientID', inplace = True)
+diab_df
+#Checking for NUll Values
+diab_df.isna().sum() //isna-- method tells if we have null values in data frame
